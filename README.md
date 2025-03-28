@@ -35,7 +35,40 @@ Also they will have to **Register**, **Login**, post **Reviews** and check their
 
 <details>
   <summary>Click to expand project structure</summary>
+<code>
+  e-commerce-app
+├── node_modules/ 📦
+├── public/ 🌍
+├── screenshots/ 📸
+├── src/ 🖥️
+│ ├── api/ 🌐
+│ ├── components/ ⚙️
+│ │ ├── auth/ 🔐
+│ │ ├── cart/ 🛒
+│ │ ├── orders/ 📦
+│ │ ├── product-grid/ 🛍️
+│ │ ├── product-page/ 📄
+│ │ ├── Account.jsx 👤
+│ │ ├── AnnouncementBar.jsx 📢
+│ │ ├── AverageStarRatings.jsx ⭐
+│ │ ├── Footer.jsx 🦶
+│ │ ├── Header.jsx 🔝
+│ │ ├── NotFound.jsx ❌
+│ │ ├── Reviews.jsx 📝
+│ ├── App.jsx 📱
+│ ├── main.jsx 🔑
+│ ├── styles.css 🎨
+├── .gitignore 🚫
+├── index.html 🗂️
+├── package-lock.json 🔒
+├── package.json 📦
+├── postcss.config.js ⚙️
+├── README.md 📘
+├── tailwind.config.js 🌬️
+├── toImplement.txt 📝
+├── vite.config.js ⚡
 
+</code>
 
 </details>
 
@@ -46,8 +79,7 @@ Also they will have to **Register**, **Login**, post **Reviews** and check their
 ✔️ **User Authentication (JWT-based)**  
 ✔️ **Product Listing & Filtering**  
 ✔️ **Shopping Cart & Checkout**  
-✔️ **Order Management**  
-✔️ **Admin Dashboard**  
+✔️ **Order Management**   
 ✔️ **MySQL Database Integration**  
 
 ---
