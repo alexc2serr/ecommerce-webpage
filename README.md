@@ -3,10 +3,10 @@
 ![E-Commerce Banner](https://via.placeholder.com/1000x300?text=E-Commerce+Web+App)
 
 <p align="center">
-  <img src="https://img.shields.io/github/languages/top/yourusername/ecommerce-app?style=for-the-badge"/>
-  <img src="https://img.shields.io/github/license/yourusername/ecommerce-app?style=for-the-badge"/>
-  <img src="https://img.shields.io/github/stars/yourusername/ecommerce-app?style=for-the-badge"/>
-  <img src="https://img.shields.io/github/forks/yourusername/ecommerce-app?style=for-the-badge"/>
+  <img src="https://img.shields.io/github/languages/top/alexc2serr/ecommerce-webpage?style=for-the-badge"/>
+  <img src="https://img.shields.io/github/license/alexc2serr/ecommerce-webpage?style=for-the-badge"/>
+  <img src="https://img.shields.io/github/stars/alexc2serr/ecommerce-webpage?style=for-the-badge"/>
+  <img src="https://img.shields.io/github/forks/alexc2serr/ecommerce-webpage?style=for-the-badge"/>
 </p>
 
 ---
