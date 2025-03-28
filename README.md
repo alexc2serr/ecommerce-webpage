@@ -1,6 +1,6 @@
 # 🛒 E-Commerce Web App
 
-![E-Commerce Banner](https://via.placeholder.com/1000x300?text=E-Commerce+Web+App)
+![E-Commerce Banner](https://th.bing.com/th/id/OIP.ftH46ANJ14YkQNmle5Ts2QHaEc?rs=1&pid=ImgDetMain)
 
 <p align="center">
   <img src="https://img.shields.io/github/languages/top/alexc2serr/ecommerce-webpage?style=for-the-badge"/>
@@ -12,13 +12,14 @@
 ---
 
 ## 🚀 Overview
-Welcome to the **E-Commerce Web App**! This is a **full-stack** application built using:
+Welcome to my **E-Commerce Web Application**! This is a **full-stack** application built using:
 
 - 🌟 **Frontend:** React.js
 - ⚙️ **Backend:** Node.js (Express)
 - 🗄️ **Database:** MySQL
 
-This project allows users to browse products, add them to the cart, and securely checkout.
+This project allows users to **browse products**, add them to the **cart**, and securely **checkout**. <br>
+Also they will have to **Register**, **Login**, post **Reviews** and check their **order history**.
 
 ---
 
@@ -26,7 +27,7 @@ This project allows users to browse products, add them to the cart, and securely
 
 | **Frontend** | **Backend** | **Database** | **Styling** |
 |-------------|------------|-------------|-------------|
-| ![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react) | ![Node.js](https://img.shields.io/badge/Node.js-Express-green?style=for-the-badge&logo=node.js) | ![MySQL](https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge&logo=mysql) | ![Styled Components](https://img.shields.io/badge/Styled--Components-💅-pink?style=for-the-badge) |
+| ![React](https://img.shields.io/badge/React-19.0.0-blue?style=for-the-badge&logo=react) | ![Node.js](https://img.shields.io/badge/Node.js-Express--4.21.2-green?style=for-the-badge&logo=node.js) | ![MySQL](https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge&logo=mysql) | ![Styled Components](https://img.shields.io/badge/Styled--Components-💅-pink?style=for-the-badge) |
 
 ---
 
