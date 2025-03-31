@@ -132,8 +132,13 @@ Los usuarios también pueden dejar reseñas en los productos que han comprado, a
   
  2️⃣ Install Dependencies
  - Firstly we have to install Node
+  ```
+  npm install
+  ```
+  This will install all the dependencies and it will setup the enviroment.
 
-
+  
+  
   ---
   ## 📑 MySQL 
   <details>
