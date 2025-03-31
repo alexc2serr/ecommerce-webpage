@@ -127,7 +127,7 @@ Los usuarios también pueden dejar reseñas en los productos que han comprado, a
 
   1️⃣ Setup MySQL Side
   - We have to setup the SQL enviroment, for that we have to open a localhost Server using XAMPP and starting Apache and SQL Servers.  
-  - Open MySQL Workbench, entero your database with your credentials and create the 5 tables using the SQL code from this section [MySQL](#-mysql).
+  - Open MySQL Workbench, enter your database with your credentials and create the 5 tables using the SQL code from this section [MySQL](#-mysql).
   - If everything seems okay go on :)
   
  2️⃣ Install Dependencies
