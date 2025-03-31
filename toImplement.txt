@@ -1,0 +1,82 @@
+CREATE TABLE products(
+   id               INTEGER  NOT NULL PRIMARY KEY 
+  ,title            VARCHAR(255) NOT NULL
+  ,category         VARCHAR(5) NOT NULL
+  ,description      VARCHAR(255) NOT NULL
+  ,image            VARCHAR(255) NOT NULL
+  ,price            NUMERIC(5,2) NOT NULL
+  ,rating           INTEGER  NOT NULL
+  ,color            VARCHAR(6) NOT NULL
+  ,discounted_price NUMERIC(5,2)
+  ,uri              VARCHAR(255) NOT NULL
+);
+
+1. Users Table (for Authentication)
+
+CREATE TABLE users (
+   id               INTEGER AUTO_INCREMENT PRIMARY KEY,
+   username         VARCHAR(255) NOT NULL UNIQUE,
+   email            VARCHAR(255) NOT NULL UNIQUE,
+   password_hash    VARCHAR(255) NOT NULL,
+   full_name        VARCHAR(255) NOT NULL,
+   address          TEXT,
+   role             ENUM('user', 'admin') DEFAULT 'user',
+   created_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   updated_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+2. Orders Table (to track purchases)
+
+CREATE TABLE orders (
+   id               INTEGER AUTO_INCREMENT PRIMARY KEY,
+   user_id          INTEGER NOT NULL,
+   total_price      NUMERIC(10, 2) NOT NULL,
+   status           ENUM('pending', 'paid', 'shipped', 'delivered', 'cancelled') DEFAULT 'pending',
+   created_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   updated_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+   FOREIGN KEY (user_id) REFERENCES users(id)
+);
+
+
+3. Order Items Table (to store products in each order)
+
+
+CREATE TABLE order_items (
+   id               INTEGER AUTO_INCREMENT PRIMARY KEY,
+   order_id         INTEGER NOT NULL,
+   product_id       INTEGER NOT NULL,
+   quantity         INTEGER NOT NULL,
+   price            NUMERIC(5,2) NOT NULL,
+   FOREIGN KEY (order_id) REFERENCES orders(id),
+   FOREIGN KEY (product_id) REFERENCES products(id)
+);
+
+
+
+Product Reviews Table (for user reviews)
+
+
+CREATE TABLE reviews (
+   id               INTEGER AUTO_INCREMENT PRIMARY KEY,
+   user_id          INTEGER NOT NULL,
+   product_id       INTEGER NOT NULL,
+   rating           INTEGER NOT NULL CHECK (rating BETWEEN 1 AND 5),
+   review_text      TEXT,
+   created_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   FOREIGN KEY (user_id) REFERENCES users(id),
+   FOREIGN KEY (product_id) REFERENCES products(id)
+);
+
+
+ Shopping Cart Table (to temporarily store items in the cart)
+
+CREATE TABLE shopping_cart (
+   id               INTEGER AUTO_INCREMENT PRIMARY KEY,
+   user_id          INTEGER NOT NULL,
+   product_id       INTEGER NOT NULL,
+   quantity         INTEGER NOT NULL,
+   created_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+   updated_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+   FOREIGN KEY (user_id) REFERENCES users(id),
+   FOREIGN KEY (product_id) REFERENCES products(id)
+);
