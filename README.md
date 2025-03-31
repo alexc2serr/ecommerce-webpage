@@ -2,6 +2,7 @@
 
 ![E-Commerce Banner](https://th.bing.com/th/id/OIP.ftH46ANJ14YkQNmle5Ts2QHaEc?rs=1&pid=ImgDetMain)
 
+
 <p align="center">
   <img src="https://img.shields.io/github/languages/top/alexc2serr/ecommerce-webpage?style=for-the-badge"/>
   <img src="https://img.shields.io/github/license/alexc2serr/ecommerce-webpage?style=for-the-badge"/>
@@ -20,6 +21,36 @@ Welcome to my **E-Commerce Web Application**! This is a **full-stack** applicati
 
 This project allows users to **browse products**, add them to the **cart**, and securely **checkout**. <br>
 Also they will have to **Register**, **Login**, post **Reviews** and check their **order history**.
+
+---
+
+## Enunciado Proyecto
+<details>
+
+Sistema de Gestión para una Tienda Online
+
+Una tienda en línea permite a los usuarios comprar una amplia variedad de productos a través de su plataforma digital. Cada usuario debe estar registrado en el sistema proporcionando su información personal, incluyendo su nombre de usuario, dirección de correo electrónico y dirección de envío. Los usuarios pueden navegar por el catálogo de productos, añadir artículos a su carrito de compras y completar pedidos a través del proceso de checkout.
+
+Cada producto en la tienda está catalogado con un título, descripción, categoría, precio y puede incluir un precio con descuento. Los productos tienen una calificación promedio basada en las reseñas de los clientes que los han comprado.
+
+Cuando un usuario añade productos al carrito, estos quedan almacenados en la base de datos para que puedan ser recuperados en futuras visitas. Al proceder con la compra, se genera un **pedido** que contiene información del usuario, el total a pagar y su estado (pendiente, pagado, enviado, entregado o cancelado). Cada pedido tiene una lista de artículos con su cantidad y precio correspondiente.
+
+Los usuarios también pueden dejar reseñas en los productos que han comprado, asignando una calificación de 1 a 5 estrellas y escribiendo un comentario sobre su experiencia.
+
+**Estructura de la base de datos:**
+
+**USUARIOS (ID_USUARIO, NOMBRE_USUARIO, EMAIL, DIRECCIÓN, ROL)**
+
+**PRODUCTOS (ID_PRODUCTO, TÍTULO, CATEGORÍA, DESCRIPCIÓN, IMAGEN, PRECIO, PRECIO_DESCUENTO, CALIFICACIÓN_PROMEDIO, URI)**
+
+**CARRITO (ID_CARRITO, ID_USUARIO, ID_PRODUCTO, CANTIDAD, FECHA_AGREGADO)**
+
+**PEDIDOS (ID_PEDIDO, ID_USUARIO, TOTAL, ESTADO, FECHA_PEDIDO)**
+
+**DETALLE_PEDIDO (ID_DETALLE, ID_PEDIDO, ID_PRODUCTO, CANTIDAD, PRECIO_UNITARIO)**
+
+**RESEÑAS (ID_RESEÑA, ID_USUARIO, ID_PRODUCTO, CALIFICACIÓN, COMENTARIO, FECHA_RESEÑA)**
+</details>
 
 ---
 
@@ -103,7 +134,7 @@ Also they will have to **Register**, **Login**, post **Reviews** and check their
  - Firstly we have to install Node
 
 
-  
+  ---
   ## 📑 MySQL 
   <details>
 
@@ -192,9 +223,16 @@ Also they will have to **Register**, **Login**, post **Reviews** and check their
        FOREIGN KEY (product_id) REFERENCES products(id)
     );
 
+  # DIAGRAMAS
+  ## DIAGRAMA ER
+  ![Blank diagram - ER](https://github.com/user-attachments/assets/4603762f-0402-4554-9535-aaf17371732b)  
+  ## DIAGRAMA ERD
+  ![Blank diagram - ERD](https://github.com/user-attachments/assets/fd84ead3-2365-4bab-a730-fb2c667515a7)
+
   </details>
 
+---
 ### 📥 Clone the Repository
 ```sh
-git clone https://github.com/yourusername/ecommerce-app.git
-cd ecommerce-app
+git clone https://github.com/alexc2serr/ecommerce-webpage.git
+cd ecommerce-webpage
