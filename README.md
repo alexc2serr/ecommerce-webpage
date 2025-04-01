@@ -231,7 +231,7 @@ Los usuarios también pueden dejar reseñas en los productos que han comprado, a
   # DIAGRAMAS
   
   # DIAGRAMA ER
-  #[Blank diagram - ER (1).pdf](https://github.com/user-attachments/files/19549275/Blank.diagram.-.ER.1.pdf)
+  ![Blank diagram - ER (1)](https://github.com/user-attachments/assets/32d84ed6-a186-4206-94bc-ffecfd2cb118)
   ## DIAGRAMA ERD
   ![Blank diagram - ERD](https://github.com/user-attachments/assets/fd84ead3-2365-4bab-a730-fb2c667515a7)
 
@@ -242,3 +242,4 @@ Los usuarios también pueden dejar reseñas en los productos que han comprado, a
 ```sh
 git clone https://github.com/alexc2serr/ecommerce-webpage.git
 cd ecommerce-webpage
+
