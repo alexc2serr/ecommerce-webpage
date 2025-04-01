@@ -229,8 +229,9 @@ Los usuarios también pueden dejar reseñas en los productos que han comprado, a
     );
 
   # DIAGRAMAS
-  ## DIAGRAMA ER
-  ![Blank diagram - ER](https://github.com/user-attachments/assets/4603762f-0402-4554-9535-aaf17371732b)  
+  
+  # DIAGRAMA ER
+  #[Blank diagram - ER (1).pdf](https://github.com/user-attachments/files/19549275/Blank.diagram.-.ER.1.pdf)
   ## DIAGRAMA ERD
   ![Blank diagram - ERD](https://github.com/user-attachments/assets/fd84ead3-2365-4bab-a730-fb2c667515a7)
 
