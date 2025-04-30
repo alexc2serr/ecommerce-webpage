@@ -136,8 +136,13 @@ Los usuarios también pueden dejar reseñas en los productos que han comprado, a
   npm install
   ```
   This will install all the dependencies and it will setup the enviroment.
-
   
+  3️⃣ You are ready to start
+  - In your console execute this command
+ ```
+  npm start
+  ```
+  - You should see everything in green
   
   ---
   ## 📑 MySQL 
